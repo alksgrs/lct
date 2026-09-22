@@ -1,0 +1,21 @@
+{
+    "placements": [
+        {
+            "x": 50.0,
+            "y": 11.5,
+            "species_type": "tree",
+            "species": null,
+            "rules": [
+                {
+                    "id": "test_water_tree",
+                    "object": "PIPE_WATER",
+                    "planting": "tree",
+                    "min_distance_m": 2.0,
+                    "act": "TEST",
+                    "clause": "TEST",
+                    "verified": true
+                }
+            ]
+        }
+    ]
+}
