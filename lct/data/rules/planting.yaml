@@ -1,0 +1,13 @@
+planting:
+  tree:
+    grid_spacing_m: 5.0
+    min_spacing_m: 10.0
+    bin_offset_m: 0.1
+
+  shrub:
+    grid_spacing_m: 2.0
+    min_spacing_m: 3.0
+
+  groundcover:
+    grid_spacing_m: 1.0
+    min_spacing_m: 1.5

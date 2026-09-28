@@ -1,0 +1,1611 @@
+{
+  "input": "test.dxf",
+  "species_type": "tree",
+  "placements_count": 44,
+  "rejections_count": 0,
+  "rules": [
+    {
+      "rule_id": "water_tree",
+      "object": "PIPE_WATER",
+      "planting": "tree",
+      "min_distance_m": 2.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "building_tree",
+      "object": "BUILDING",
+      "planting": "tree",
+      "min_distance_m": 5.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    }
+  ],
+  "placements": [
+    {
+      "x": 2.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 44.68658757027042
+        }
+      ]
+    },
+    {
+      "x": 12.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 38.03802188173626
+        }
+      ]
+    },
+    {
+      "x": 22.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 33.119346440946664
+        }
+      ]
+    },
+    {
+      "x": 32.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.771595809698375
+        }
+      ]
+    },
+    {
+      "x": 42.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.669872981077813
+        }
+      ]
+    },
+    {
+      "x": 52.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.669872981077813
+        }
+      ]
+    },
+    {
+      "x": 62.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.669872981077813
+        }
+      ]
+    },
+    {
+      "x": 72.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 31.57358244918442
+        }
+      ]
+    },
+    {
+      "x": 82.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 35.31134532519891
+        }
+      ]
+    },
+    {
+      "x": 92.5,
+      "y": 4.330127018922193,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 20.669872981077813
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 41.19333815892379
+        }
+      ]
+    },
+    {
+      "x": 7.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 35.2231930129331
+        }
+      ]
+    },
+    {
+      "x": 17.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 28.118914026440272
+        }
+      ]
+    },
+    {
+      "x": 27.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 23.252383233258897
+        }
+      ]
+    },
+    {
+      "x": 37.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.00961894323342
+        }
+      ]
+    },
+    {
+      "x": 47.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.00961894323342
+        }
+      ]
+    },
+    {
+      "x": 57.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.00961894323342
+        }
+      ]
+    },
+    {
+      "x": 67.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.15114728465186
+        }
+      ]
+    },
+    {
+      "x": 77.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 25.3115255570726
+        }
+      ]
+    },
+    {
+      "x": 87.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 31.47496347934878
+        }
+      ]
+    },
+    {
+      "x": 97.5,
+      "y": 12.990381056766578,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 12.009618943233422
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 39.2514117711241
+        }
+      ]
+    },
+    {
+      "x": 2.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 32.8365308875363
+        }
+      ]
+    },
+    {
+      "x": 12.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.983423607637864
+        }
+      ]
+    },
+    {
+      "x": 22.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 13.350571550616303
+        }
+      ]
+    },
+    {
+      "x": 32.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 5.313921407785911
+        }
+      ]
+    },
+    {
+      "x": 67.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 5.313921407785911
+        }
+      ]
+    },
+    {
+      "x": 77.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 13.350571550616303
+        }
+      ]
+    },
+    {
+      "x": 87.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 22.983423607637864
+        }
+      ]
+    },
+    {
+      "x": 97.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 5.310889132455344
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 32.8365308875363
+        }
+      ]
+    },
+    {
+      "x": 5.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.0
+        }
+      ]
+    },
+    {
+      "x": 15.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 20.0
+        }
+      ]
+    },
+    {
+      "x": 25.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 10.0
+        }
+      ]
+    },
+    {
+      "x": 75.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 10.0
+        }
+      ]
+    },
+    {
+      "x": 85.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 20.0
+        }
+      ]
+    },
+    {
+      "x": 95.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 18.301270189221917
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 30.0
+        }
+      ]
+    },
+    {
+      "x": 2.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 33.10339673509576
+        }
+      ]
+    },
+    {
+      "x": 12.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 23.363109283679442
+        }
+      ]
+    },
+    {
+      "x": 22.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 13.994101450294997
+        }
+      ]
+    },
+    {
+      "x": 32.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 6.770145892161299
+        }
+      ]
+    },
+    {
+      "x": 42.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 6.29165124598849
+        }
+      ]
+    },
+    {
+      "x": 52.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 6.29165124598849
+        }
+      ]
+    },
+    {
+      "x": 62.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 6.29165124598849
+        }
+      ]
+    },
+    {
+      "x": 72.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 9.789528865126682
+        }
+      ]
+    },
+    {
+      "x": 82.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 18.596636131331614
+        }
+      ]
+    },
+    {
+      "x": 92.5,
+      "y": 56.29165124598849,
+      "species_type": "tree",
+      "species": null,
+      "rationale": [
+        {
+          "rule_id": "water_tree",
+          "object": "PIPE_WATER",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "building_tree",
+          "object": "BUILDING",
+          "planting": "tree",
+          "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "water_tree",
+          "status": "allowed",
+          "distance_m": 31.291651245988493
+        },
+        {
+          "rule_id": "building_tree",
+          "status": "allowed",
+          "distance_m": 28.210545464438447
+        }
+      ]
+    }
+  ],
+  "rejections": []
+}

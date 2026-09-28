@@ -1,0 +1,227 @@
+rules:
+  # Коммуникации
+  # Значения ниже сохранены по исходным данным задачи.
+  # Для нормативного режима проекта verified следует выставлять true
+  # только после проверки конкретного документа и применимости нормы
+  # к региону/типу объекта.
+
+  - id: water_tree
+    object: PIPE_WATER
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: water_shrub
+    object: PIPE_WATER
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: sewer_tree
+    object: PIPE_WATER
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: sewer_shrub
+    object: PIPE_WATER
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: drainage_tree
+    object: PIPE_WATER
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: drainage_shrub
+    object: PIPE_WATER
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: gas_low_medium_tree
+    object: PIPE_GAS
+    planting: tree
+    min_distance_m: 2.0
+    act: "ППМ 743-ПП"
+    clause: "правила создания, содержания и охраны зеленых насаждений"
+    verified: false
+
+  - id: gas_low_medium_shrub
+    object: PIPE_GAS
+    planting: shrub
+    min_distance_m: 1.0
+    act: "ППМ 743-ПП"
+    clause: "правила создания, содержания и охраны зеленых насаждений"
+    verified: false
+
+  - id: power_cable_up_to_10kv_tree
+    object: CABLE
+    planting: tree
+    min_distance_m: 1.0
+    act: "Исходные данные задачи"
+    clause: "кабели силовые до 10 кВ"
+    verified: false
+
+  - id: power_cable_up_to_10kv_shrub
+    object: CABLE
+    planting: shrub
+    min_distance_m: 0.5
+    act: "Исходные данные задачи"
+    clause: "кабели силовые до 10 кВ"
+    verified: false
+
+  - id: communication_cable_tree
+    object: CABLE
+    planting: tree
+    min_distance_m: 1.5
+    act: "Исходные данные задачи"
+    clause: "кабели связи"
+    verified: false
+
+  - id: communication_cable_shrub
+    object: CABLE
+    planting: shrub
+    min_distance_m: 0.7
+    act: "Исходные данные задачи"
+    clause: "кабели связи"
+    verified: false
+
+  - id: heat_network_tree
+    object: PIPE_HEAT
+    planting: tree
+    min_distance_m: 2.0
+    act: "Исходные данные задачи"
+    clause: "теплопровод (канал)"
+    verified: false
+
+  - id: heat_network_shrub
+    object: PIPE_HEAT
+    planting: shrub
+    min_distance_m: 1.0
+    act: "Исходные данные задачи"
+    clause: "теплопровод (канал)"
+    verified: false
+
+  # ЛЭП
+  - id: powerline_04kv_tree
+    object: POWERLINE_04KV
+    planting: tree
+    min_distance_m: 2.0
+    act: "ПП РФ № 160"
+    clause: "охранная зона ВЛ 0,4 кВ"
+    verified: false
+    prohibition: "Посадка деревьев запрещена в пределах охранной зоны"
+
+  - id: powerline_6_10kv_tall_tree
+    object: POWERLINE_6_10KV
+    planting: tall_tree
+    min_distance_m: 10.0
+    act: "ПП РФ № 160"
+    clause: "охранная зона ВЛ 6-10 кВ"
+    verified: false
+    height_limit_m: 4.0
+    prohibition: "Высокорослые деревья выше 4 м запрещены в пределах охранной зоны"
+
+  - id: powerline_35kv_tree
+    object: POWERLINE_35KV
+    planting: tree
+    min_distance_m: 15.0
+    act: "ПП РФ № 160"
+    clause: "охранная зона ВЛ 35 кВ"
+    verified: false
+    prohibition: "Посадка деревьев запрещена в пределах охранной зоны"
+
+  - id: powerline_110kv_any_plant
+    object: POWERLINE_110KV
+    planting: any
+    min_distance_m: 20.0
+    act: "ПП РФ № 160"
+    clause: "охранная зона ВЛ 110 кВ"
+    verified: false
+    prohibition: "Посадка любых насаждений запрещена в пределах охранной зоны"
+
+  - id: maf_tree
+    object: MAF
+    planting: tree
+    min_distance_m: 0
+    act: ""
+    clause: ""
+    verified: false
+
+
+  # Объекты благоустройства
+  - id: building_tree
+    object: BUILDING
+    planting: tree
+    min_distance_m: 5.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: building_shrub
+    object: BUILDING
+    planting: shrub
+    min_distance_m: 1.5
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: road_tree
+    object: ROAD
+    planting: tree
+    min_distance_m: 5.0
+    act: "Исходные данные задачи"
+    clause: "расстояние до проезжей части"
+    verified: false
+
+  - id: lighting_tree
+    object: LIGHTING
+    planting: tree
+    min_distance_m: 2.0
+    act: "Исходные данные задачи"
+    clause: "расстояние до сетей освещения"
+    verified: false
+
+  - id: bin_tree
+    object: BIN
+    planting: tree
+    min_distance_m: 0.1
+    act: "TEMPORARY"
+    clause: "0.1 m technical offset"
+    verified: false
+
+  # Общие запреты и условия
+  - id: invasive_species
+    object: SITE_BOUNDARY
+    planting: invasive
+    min_distance_m: 0.0
+    act: "ПП Москвы № 369-ПП"
+    clause: "приложение 1; приложение 2"
+    verified: true
+    prohibition: "Инвазивные виды не допускаются к использованию в соответствующих случаях, установленных нормативным актом"
+
+conditions:
+  - id: high_building_density
+    type: density_threshold
+    parameter: building_density_coefficient
+    operator: ">"
+    value: 0.6
+    act: "Исходные данные задачи"
+    clause: "условие по плотности застройки"
+    verified: false
+    action: "Требуется компенсационное озеленение"
