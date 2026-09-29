@@ -1,16 +1,19 @@
 import { useCallback, useEffect, useState } from "react";
+
 import UploadPage from "./pages/UploadPage";
 import ProcessingPage from "./pages/ProcessingPage";
 import ResultPage from "./pages/ResultPage";
+
 import {
   createJob,
   getJob,
-  getResult
+  getResult,
 } from "./services/api";
+
 import type {
   Job,
-  JobResult
-} from "./types/api";
+  JobResult,
+} from "./services/api";
 
 type Screen =
   | "upload"
@@ -38,6 +41,11 @@ export default function App() {
         setJob(next);
 
         if (next.status === "FAILED") {
+          setError(
+            next.error ||
+              "Во время расчёта произошла ошибка."
+          );
+
           setScreen("processing");
           return;
         }
@@ -96,7 +104,9 @@ export default function App() {
   };
 
   useEffect(() => {
-    if (!error) return;
+    if (!error) {
+      return;
+    }
 
     const timer =
       window.setTimeout(
@@ -120,7 +130,9 @@ export default function App() {
       )}
 
       {screen === "upload" && (
-        <UploadPage onStart={start} />
+        <UploadPage
+          onStart={start}
+        />
       )}
 
       {screen === "processing" && job && (
