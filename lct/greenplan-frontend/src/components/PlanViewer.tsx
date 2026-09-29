@@ -1,18 +1,26 @@
 import {
   Layers3,
-  X
+  X,
 } from "lucide-react";
 
 import {
   useMemo,
-  useState
+  useState,
 } from "react";
 
 import type {
   JobResult,
   Placement,
-  PlantingType
+} from "../services/api";
+
+import type {
+  PlantingType,
 } from "../types/api";
+
+type XY = {
+  x: number;
+  y: number;
+};
 
 const colors: Record<
   PlantingType,
@@ -20,7 +28,7 @@ const colors: Record<
 > = {
   tree: "#18794e",
   shrub: "#5b8c36",
-  groundcover: "#9b7b25"
+  groundcover: "#9b7b25",
 };
 
 const labels: Record<
@@ -29,7 +37,7 @@ const labels: Record<
 > = {
   tree: "Деревья",
   shrub: "Кустарники",
-  groundcover: "Покрытия"
+  groundcover: "Покрытия",
 };
 
 const icons: Record<
@@ -38,18 +46,128 @@ const icons: Record<
 > = {
   tree: "🌳",
   shrub: "🌿",
-  groundcover: "🍀"
+  groundcover: "🍀",
 };
+
+const featureStroke: Record<
+  string,
+  string
+> = {
+  building: "#8b5e3c",
+  road: "#94a3b8",
+  water_pipe: "#2878a8",
+  gas_pipe: "#c28b20",
+  cable: "#64748b",
+  powerline: "#7c3aed",
+  site_boundary: "#53635b",
+  unknown: "#64748b",
+};
+
+function addCoordinate(
+  points: XY[],
+  coordinate: unknown,
+) {
+  if (
+    !Array.isArray(coordinate) ||
+    coordinate.length < 2
+  ) {
+    return;
+  }
+
+  const x = coordinate[0];
+  const y = coordinate[1];
+
+  if (
+    typeof x !== "number" ||
+    typeof y !== "number"
+  ) {
+    return;
+  }
+
+  points.push({
+    x,
+    y,
+  });
+}
+
+function getGeometryPoints(
+  result: JobResult,
+): XY[] {
+  const points: XY[] = [];
+
+  for (const feature of result.features) {
+    const geometry = feature.geometry;
+
+    if (!geometry) {
+      continue;
+    }
+
+    if (
+      geometry.type === "Point"
+    ) {
+      addCoordinate(
+        points,
+        geometry.coordinates,
+      );
+
+      continue;
+    }
+
+    if (
+      geometry.type === "LineString"
+    ) {
+      for (const coordinate of
+        geometry.coordinates) {
+        addCoordinate(
+          points,
+          coordinate,
+        );
+      }
+
+      continue;
+    }
+
+    if (
+      geometry.type === "Polygon"
+    ) {
+      for (const ring of
+        geometry.coordinates) {
+        for (const coordinate of ring) {
+          addCoordinate(
+            points,
+            coordinate,
+          );
+        }
+      }
+    }
+  }
+
+  for (const placement of result.placements) {
+    points.push({
+      x: placement.x,
+      y: placement.y,
+    });
+  }
+
+  for (const rejection of result.rejections) {
+    points.push({
+      x: rejection.x,
+      y: rejection.y,
+    });
+  }
+
+  return points;
+}
 
 export default function PlanViewer({
   result,
   selected,
-  onSelect
+  onSelect,
 }: {
   result: JobResult;
   selected: Placement | null;
   onSelect: (
-    placement: Placement | null
+    placement: Placement | null,
   ) => void;
 }) {
   const [filter, setFilter] =
@@ -60,65 +178,92 @@ export default function PlanViewer({
   const [showConstraints, setShowConstraints] =
     useState(false);
 
-  const { bounds } = result;
-
   const width = 800;
   const height = 520;
+  const padding = 35;
 
-  const sx =
-    width /
+  const bounds = useMemo(() => {
+    const points =
+      getGeometryPoints(result);
+
+    if (points.length === 0) {
+      return {
+        minX: 0,
+        minY: 0,
+        maxX: 100,
+        maxY: 100,
+      };
+    }
+
+    return {
+      minX: Math.min(
+        ...points.map(
+          (item) => item.x,
+        ),
+      ),
+      minY: Math.min(
+        ...points.map(
+          (item) => item.y,
+        ),
+      ),
+      maxX: Math.max(
+        ...points.map(
+          (item) => item.x,
+        ),
+      ),
+      maxY: Math.max(
+        ...points.map(
+          (item) => item.y,
+        ),
+      ),
+    };
+  }, [result]);
+
+  const scaleX =
+    (width - padding * 2) /
     Math.max(
       1,
-      bounds.maxX - bounds.minX
+      bounds.maxX - bounds.minX,
     );
 
-  const sy =
-    height /
+  const scaleY =
+    (height - padding * 2) /
     Math.max(
       1,
-      bounds.maxY - bounds.minY
+      bounds.maxY - bounds.minY,
     );
 
-  const point = (
+  const toSvgPoint = (
     x: number,
-    y: number
+    y: number,
   ) => ({
     cx:
+      padding +
       (x - bounds.minX) *
-      sx,
+        scaleX,
 
     cy:
       height -
+      padding -
       (y - bounds.minY) *
-        sy
+        scaleY,
   });
 
-  const featureStroke: Record<
-    string,
-    string
-  > = {
-    site: "#53635b",
-    building: "#8b5e3c",
-    water: "#2878a8",
-    gas: "#c28b20",
-    road: "#94a3b8"
-  };
-
   const visiblePlacements =
-    useMemo(
-      () =>
-        filter === "all"
-          ? result.placements
-          : result.placements.filter(
-              (placement) =>
-                placement.species_type ===
-                filter
-            ),
-      [filter, result.placements]
-    );
+    useMemo(() => {
+      if (filter === "all") {
+        return result.placements;
+      }
 
-  const selectedId =
-    selected?.id;
+      return result.placements.filter(
+        (placement) =>
+          placement.species_type ===
+          filter,
+      );
+    }, [
+      filter,
+      result.placements,
+    ]);
 
   return (
     <div className="viewer-shell">
@@ -129,7 +274,8 @@ export default function PlanViewer({
           </span>
 
           <span className="viewer-subtitle">
-            Все посадки уже рассчитаны сервисом
+            Все посадки уже рассчитаны
+            сервисом
           </span>
         </div>
 
@@ -142,7 +288,7 @@ export default function PlanViewer({
           }`}
           onClick={() =>
             setShowConstraints(
-              (value) => !value
+              (value) => !value,
             )
           }
         >
@@ -154,10 +300,7 @@ export default function PlanViewer({
         </button>
       </div>
 
-      <div
-        className="map-filters"
-        aria-label="Фильтр отображения посадок"
-      >
+      <div className="map-filters">
         <button
           type="button"
           className={
@@ -174,11 +317,12 @@ export default function PlanViewer({
 
         {(
           Object.keys(
-            labels
+            labels,
           ) as PlantingType[]
         ).map((type) => (
           <button
             type="button"
+            key={type}
             className={
               filter === type
                 ? "active"
@@ -187,7 +331,6 @@ export default function PlanViewer({
             onClick={() =>
               setFilter(type)
             }
-            key={type}
           >
             {icons[type]}{" "}
             {labels[type]}
@@ -210,60 +353,203 @@ export default function PlanViewer({
             fill="#f8faf8"
           />
 
-          {result.features
-            .filter(
-              (feature) =>
-                feature.type !== "site"
-            )
-            .map((feature) => {
-              const points =
-                feature.points
-                  .map((p) => {
-                    const q =
-                      point(
-                        p.x,
-                        p.y
-                      );
+          {result.features.map(
+            (feature) => {
+              const geometry =
+                feature.geometry;
 
-                    return `${q.cx},${q.cy}`;
-                  })
-                  .join(" ");
+              if (!geometry) {
+                return null;
+              }
 
-              return feature.type ===
-                "building" ? (
-                <polygon
-                  key={feature.id}
-                  points={points}
-                  fill="#e7ddd3"
-                  stroke={
-                    featureStroke.building
-                  }
-                  strokeWidth="2"
-                />
-              ) : (
-                <polyline
-                  key={feature.id}
-                  points={points}
-                  fill="none"
-                  stroke={
-                    featureStroke[
-                      feature.type
-                    ] ?? "#64748b"
-                  }
-                  strokeWidth={
-                    feature.type === "road"
-                      ? 12
-                      : 3
-                  }
-                  strokeLinecap="round"
-                  opacity={
-                    feature.type === "road"
-                      ? 0.42
-                      : 0.95
-                  }
-                />
-              );
-            })}
+              const stroke =
+                featureStroke[
+                  feature.kind
+                ] ?? "#64748b";
+
+              if (
+                geometry.type ===
+                "Point"
+              ) {
+                const coordinates =
+                  geometry.coordinates;
+
+                if (
+                  coordinates.length <
+                  2
+                ) {
+                  return null;
+                }
+
+                const x =
+                  coordinates[0];
+
+                const y =
+                  coordinates[1];
+
+                if (
+                  typeof x !==
+                    "number" ||
+                  typeof y !==
+                    "number"
+                ) {
+                  return null;
+                }
+
+                const q =
+                  toSvgPoint(x, y);
+
+                return (
+                  <circle
+                    key={feature.id}
+                    cx={q.cx}
+                    cy={q.cy}
+                    r="4"
+                    fill={stroke}
+                  />
+                );
+              }
+
+              if (
+                geometry.type ===
+                "LineString"
+              ) {
+                const points =
+                  geometry.coordinates
+                    .map(
+                      (
+                        coordinate,
+                      ) => {
+                        if (
+                          coordinate.length <
+                          2
+                        ) {
+                          return null;
+                        }
+
+                        const x =
+                          coordinate[0];
+
+                        const y =
+                          coordinate[1];
+
+                        if (
+                          typeof x !==
+                            "number" ||
+                          typeof y !==
+                            "number"
+                        ) {
+                          return null;
+                        }
+
+                        const q =
+                          toSvgPoint(
+                            x,
+                            y,
+                          );
+
+                        return `${q.cx},${q.cy}`;
+                      },
+                    )
+                    .filter(
+                      (
+                        value,
+                      ): value is string =>
+                        value !== null,
+                    )
+                    .join(" ");
+
+                return (
+                  <polyline
+                    key={feature.id}
+                    points={points}
+                    fill="none"
+                    stroke={stroke}
+                    strokeWidth={
+                      feature.kind ===
+                      "road"
+                        ? 12
+                        : 3
+                    }
+                    strokeLinecap="round"
+                    opacity={
+                      feature.kind ===
+                      "road"
+                        ? 0.42
+                        : 0.9
+                    }
+                  />
+                );
+              }
+
+              if (
+                geometry.type ===
+                "Polygon"
+              ) {
+                const points =
+                  geometry.coordinates[0]
+                    ?.map(
+                      (
+                        coordinate,
+                      ) => {
+                        if (
+                          coordinate.length <
+                          2
+                        ) {
+                          return null;
+                        }
+
+                        const x =
+                          coordinate[0];
+
+                        const y =
+                          coordinate[1];
+
+                        if (
+                          typeof x !==
+                            "number" ||
+                          typeof y !==
+                            "number"
+                        ) {
+                          return null;
+                        }
+
+                        const q =
+                          toSvgPoint(
+                            x,
+                            y,
+                          );
+
+                        return `${q.cx},${q.cy}`;
+                      },
+                    )
+                    .filter(
+                      (
+                        value,
+                      ): value is string =>
+                        value !== null,
+                    )
+                    .join(" ");
+
+                return (
+                  <polygon
+                    key={feature.id}
+                    points={points}
+                    fill={
+                      feature.kind ===
+                      "building"
+                        ? "#e7ddd3"
+                        : "none"
+                    }
+                    stroke={stroke}
+                    strokeWidth="2"
+                  />
+                );
+              }
+
+              return null;
+            },
+          )}
 
           {showConstraints && (
             <>
@@ -292,14 +578,14 @@ export default function PlanViewer({
           {result.rejections.map(
             (rejection) => {
               const q =
-                point(
+                toSvgPoint(
                   rejection.x,
-                  rejection.y
+                  rejection.y,
                 );
 
               return (
                 <g
-                  key={`r-${rejection.id}`}
+                  key={`rejection-${rejection.id}`}
                   transform={`translate(${q.cx} ${q.cy})`}
                   opacity=".48"
                 >
@@ -329,119 +615,75 @@ export default function PlanViewer({
                   />
                 </g>
               );
-            }
+            },
           )}
 
           {visiblePlacements.map(
             (placement) => {
               const q =
-                point(
+                toSvgPoint(
                   placement.x,
-                  placement.y
+                  placement.y,
                 );
 
               const active =
                 placement.id ===
-                selectedId;
+                selected?.id;
 
-              const isGroundcover =
-                placement.species_type ===
-                "groundcover";
+              const type =
+                placement.species_type;
 
               return (
                 <g
                   key={placement.id}
                   transform={`translate(${q.cx} ${q.cy})`}
                   onClick={() =>
-                    onSelect(placement)
+                    onSelect(
+                      placement,
+                    )
                   }
                   className="placement-point"
                   tabIndex={0}
                   role="button"
-                  aria-label={`${labels[placement.species_type]} №${placement.id}`}
+                  aria-label={`${labels[type]} №${placement.id}`}
                   onKeyDown={(
-                    event
+                    event,
                   ) => {
                     if (
                       event.key ===
                         "Enter" ||
-                      event.key ===
-                        " "
+                      event.key === " "
                     ) {
                       onSelect(
-                        placement
+                        placement,
                       );
                     }
                   }}
                 >
                   <circle
                     r={
-                      active
-                        ? 11
-                        : 8
+                      active ? 11 : 8
                     }
                     fill="white"
                     stroke={
-                      colors[
-                        placement
-                          .species_type
-                      ]
+                      colors[type]
                     }
                     strokeWidth={
-                      active
-                        ? 4
-                        : 3
+                      active ? 4 : 3
                     }
                   />
 
-                  {isGroundcover ? (
-                    <rect
-                      x={
-                        active
-                          ? -4
-                          : -3
-                      }
-                      y={
-                        active
-                          ? -4
-                          : -3
-                      }
-                      width={
-                        active
-                          ? 8
-                          : 6
-                      }
-                      height={
-                        active
-                          ? 8
-                          : 6
-                      }
-                      rx="2"
-                      fill={
-                        colors[
-                          placement
-                            .species_type
-                        ]
-                      }
-                    />
-                  ) : (
-                    <circle
-                      r={
-                        active
-                          ? 5
-                          : 4
-                      }
-                      fill={
-                        colors[
-                          placement
-                            .species_type
-                        ]
-                      }
-                    />
-                  )}
+                  <circle
+                    r={
+                      active ? 5 : 4
+                    }
+                    fill={
+                      colors[type]
+                    }
+                  />
                 </g>
               );
-            }
+            },
           )}
         </svg>
 
@@ -472,14 +714,14 @@ export default function PlanViewer({
       <div className="legend">
         {(
           Object.keys(
-            labels
+            labels,
           ) as PlantingType[]
         ).map((type) => (
           <span key={type}>
             <i
               style={{
                 background:
-                  colors[type]
+                  colors[type],
               }}
             />
 
