@@ -1,7 +1,9 @@
-export type PlantingType = "tree" | "shrub" | "groundcover";
+export type PlantingType =
+  | "tree"
+  | "shrub"
+  | "groundcover";
 
 export type JobStatus =
-  | "UPLOADED"
   | "QUEUED"
   | "PROCESSING"
   | "COMPLETED"
@@ -12,89 +14,120 @@ export interface Rule {
   object: string;
   planting: PlantingType;
   min_distance_m: number;
-  source: {
-    act: string;
-    clause: string;
-  };
+  source: string;
+  clause: string;
   verified: boolean;
 }
 
 export interface Placement {
-  id: number;
+  id: string;
   x: number;
   y: number;
+
   species_type: PlantingType;
   species: string | null;
-  allowed: boolean;
+
+  status:
+    | "allowed"
+    | "rejected"
+    | "warning";
+
   rationale: Rule[];
-  distances: Array<{
-    feature: string;
-    distance_m: number;
-    required_m: number;
-    passed: boolean;
-  }>;
 }
 
 export interface Rejection {
-  id: number;
+  id: string;
   x: number;
   y: number;
+
   species_type: PlantingType;
+
   violated: Rule;
   reason: string;
 }
 
-export interface JobParameters {
-  mode: "automatic";
+export interface Feature {
+  id: string;
+
+  kind:
+    | "building"
+    | "road"
+    | "water_pipe"
+    | "gas_pipe"
+    | "cable"
+    | "powerline"
+    | "site_boundary"
+    | "unknown";
+
+  source_layer: string;
+  confidence: number;
+
+  geometry?:
+    | {
+        type: "Point";
+        coordinates: [
+          number,
+          number
+        ];
+      }
+    | {
+        type: "LineString";
+        coordinates: [
+          number,
+          number
+        ][];
+      }
+    | {
+        type: "Polygon";
+        coordinates: [
+          [
+            number,
+            number
+          ][]
+        ][];
+      };
 }
 
 export interface Job {
   id: string;
-  status: JobStatus;
-  stage?: string;
-  progress?: number;
-  inputFile: string;
-  parameters: JobParameters;
-  error?: string;
+
+  status:
+    | "QUEUED"
+    | "PROCESSING"
+    | "COMPLETED"
+    | "FAILED";
+
+  progress: number;
+
+  stage: string;
+
+  error?: string | null;
 }
 
 export interface JobResult {
-  job: Job;
+  run_id: string;
+
+  status:
+    | "completed"
+    | "failed";
 
   placements: Placement[];
 
   rejections: Rejection[];
 
-  summary: {
-    totalPlacements: number;
+  features: Feature[];
+
+  statistics: {
     trees: number;
     shrubs: number;
-    groundcovers: number;
-    groundcoversAreaM2?: number;
-    rejections: number;
-    normsPassed?: boolean;
+    groundcovers_area_m2: number;
+    total_green_area_m2: number;
+    allowed_zones: number;
+    rejected_count: number;
   };
 
-  bounds: {
-    minX: number;
-    minY: number;
-    maxX: number;
-    maxY: number;
+  progress?: {
+    stage: string;
+    progress: number;
   };
-
-  features: Array<{
-    id: string;
-    type:
-      | "site"
-      | "building"
-      | "water"
-      | "gas"
-      | "cable"
-      | "powerline"
-      | "road";
-    points: Array<{
-      x: number;
-      y: number;
-    }>;
-  }>;
 }
