@@ -4,7 +4,10 @@ from greenplan.planner.spacing import filter_by_spacing
 from greenplan.planner.rationale import check_rule
 from greenplan.models import Placement, Rejection, Rule
 from greenplan.planner.point_checker import find_violation
-
+from greenplan.planner.point_checker import (
+    find_violation,
+    find_bin_violation
+)
 
 def create_placement(
     allowed_zone,
@@ -72,6 +75,34 @@ def create_placements(
     return placements
 
 
+def create_plan_with_rejections(
+    area,
+    species_type: str,
+    rules: list[Rule],
+    features,
+    grid_spacing: float,
+    min_spacing: float,
+    species: str | None = None,
+    bin_offset: float = 0
+):
+    return create_placements(
+        allowed_zone=allowed_zone,
+        species_type=species_type,
+        rules=rules,
+        grid_spacing=grid_spacing,
+        min_spacing=min_spacing,
+        features=features,
+        species=species
+    )
+
+def build_rationale(rules: list[Rule]) -> list[Rule]:
+    return [
+        rule
+        for rule in rules
+        if rule.verified
+    ]
+
+
 def create_plan(
     allowed_zone,
     species_type: str,
@@ -91,13 +122,6 @@ def create_plan(
         species=species
     )
 
-def build_rationale(rules: list[Rule]) -> list[Rule]:
-    return [
-        rule
-        for rule in rules
-        if rule.verified
-    ]
-
 
 def create_plan_with_rejections(
     area,
@@ -106,7 +130,8 @@ def create_plan_with_rejections(
     features,
     grid_spacing: float,
     min_spacing: float,
-    species: str | None = None
+    species: str | None = None,
+    bin_offset: float = 0
 ):
     candidates = create_hex_grid(
         area,
@@ -117,6 +142,13 @@ def create_plan_with_rejections(
     rejections = []
 
     for point in candidates:
+        if find_bin_violation(
+                point,
+                features,
+                bin_offset
+        ):
+            continue
+
         violated_rule = find_violation(
             point,
             features,
@@ -163,3 +195,4 @@ def create_plan_with_rejections(
         )
 
     return result, rejections
+

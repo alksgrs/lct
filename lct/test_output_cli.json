@@ -2,11 +2,51 @@
   "input": "C:\\Users\\Aleksandra\\PycharmProjects\\LCT\\lct\\test.dxf",
   "species_type": "tree",
   "placements_count": 44,
-  "rejections_count": 0,
+  "rejections_count": 62,
   "rules": [
     {
       "rule_id": "water_tree",
       "object": "PIPE_WATER",
+      "planting": "tree",
+      "min_distance_m": 2.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "sewer_tree",
+      "object": "PIPE_SEWER",
+      "planting": "tree",
+      "min_distance_m": 1.5,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "drainage_tree",
+      "object": "PIPE_DRAINAGE",
+      "planting": "tree",
+      "min_distance_m": 2.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "gas_tree",
+      "object": "PIPE_GAS",
+      "planting": "tree",
+      "min_distance_m": 1.5,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "heat_network_tree",
+      "object": "PIPE_HEAT",
+      "planting": "tree",
+      "min_distance_m": 2.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "cable_tree",
+      "object": "CABLE",
       "planting": "tree",
       "min_distance_m": 2.0,
       "act": "СП 42.13330.2016",
@@ -19,6 +59,66 @@
       "min_distance_m": 5.0,
       "act": "СП 42.13330.2016",
       "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "road_tree",
+      "object": "ROAD",
+      "planting": "tree",
+      "min_distance_m": 2.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    },
+    {
+      "rule_id": "lighting_tree",
+      "object": "LIGHTING",
+      "planting": "tree",
+      "min_distance_m": 4.0,
+      "act": "СП 42.13330.2016",
+      "clause": "таблица 9.1"
+    }
+  ],
+  "not_applicable_rules": [
+    {
+      "rule_id": "sewer_tree",
+      "object": "PIPE_SEWER",
+      "planting": "tree",
+      "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+    },
+    {
+      "rule_id": "drainage_tree",
+      "object": "PIPE_DRAINAGE",
+      "planting": "tree",
+      "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+    },
+    {
+      "rule_id": "gas_tree",
+      "object": "PIPE_GAS",
+      "planting": "tree",
+      "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+    },
+    {
+      "rule_id": "heat_network_tree",
+      "object": "PIPE_HEAT",
+      "planting": "tree",
+      "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+    },
+    {
+      "rule_id": "cable_tree",
+      "object": "CABLE",
+      "planting": "tree",
+      "message": "Объектов типа CABLE в чертеже не найдено"
+    },
+    {
+      "rule_id": "road_tree",
+      "object": "ROAD",
+      "planting": "tree",
+      "message": "Объектов типа ROAD в чертеже не найдено"
+    },
+    {
+      "rule_id": "lighting_tree",
+      "object": "LIGHTING",
+      "planting": "tree",
+      "message": "Объектов типа LIGHTING в чертеже не найдено"
     }
   ],
   "placements": [
@@ -37,10 +137,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -49,12 +205,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 44.68658757027042
+          "distance_m": 44.68658757027042,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -73,10 +273,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -85,12 +341,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 38.03802188173626
+          "distance_m": 38.03802188173626,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -109,10 +409,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -121,12 +477,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 33.119346440946664
+          "distance_m": 33.119346440946664,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -145,10 +545,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -157,12 +613,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.771595809698375
+          "distance_m": 30.771595809698375,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -181,10 +681,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -193,12 +749,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.669872981077813
+          "distance_m": 30.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -217,10 +817,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -229,12 +885,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.669872981077813
+          "distance_m": 30.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -253,10 +953,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -265,12 +1021,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.669872981077813
+          "distance_m": 30.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -289,10 +1089,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -301,12 +1157,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 31.57358244918442
+          "distance_m": 31.57358244918442,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -325,10 +1225,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -337,12 +1293,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 35.31134532519891
+          "distance_m": 35.31134532519891,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -361,10 +1361,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -373,12 +1429,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 20.669872981077813
+          "distance_m": 20.669872981077813,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 41.19333815892379
+          "distance_m": 41.19333815892379,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -397,10 +1497,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -409,12 +1565,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 35.2231930129331
+          "distance_m": 35.2231930129331,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -433,10 +1633,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -445,12 +1701,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 28.118914026440272
+          "distance_m": 28.118914026440272,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -469,10 +1769,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -481,12 +1837,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 23.252383233258897
+          "distance_m": 23.252383233258897,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -505,10 +1905,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -517,12 +1973,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.00961894323342
+          "distance_m": 22.00961894323342,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -541,10 +2041,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -553,12 +2109,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.00961894323342
+          "distance_m": 22.00961894323342,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -577,10 +2177,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -589,12 +2245,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.00961894323342
+          "distance_m": 22.00961894323342,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -613,10 +2313,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -625,12 +2381,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.15114728465186
+          "distance_m": 22.15114728465186,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -649,10 +2449,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -661,12 +2517,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 25.3115255570726
+          "distance_m": 25.3115255570726,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -685,10 +2585,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -697,12 +2653,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 31.47496347934878
+          "distance_m": 31.47496347934878,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -721,10 +2721,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -733,12 +2789,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 12.009618943233422
+          "distance_m": 12.009618943233422,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 39.2514117711241
+          "distance_m": 39.2514117711241,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -757,10 +2857,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -769,12 +2925,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 32.8365308875363
+          "distance_m": 32.8365308875363,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -793,10 +2993,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -805,12 +3061,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.983423607637864
+          "distance_m": 22.983423607637864,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -829,10 +3129,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -841,12 +3197,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 13.350571550616303
+          "distance_m": 13.350571550616303,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -865,10 +3265,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -877,12 +3333,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 5.313921407785911
+          "distance_m": 5.313921407785911,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -901,10 +3401,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -913,12 +3469,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 5.313921407785911
+          "distance_m": 5.313921407785911,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -937,10 +3537,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -949,12 +3605,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 13.350571550616303
+          "distance_m": 13.350571550616303,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -973,10 +3673,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -985,12 +3741,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 22.983423607637864
+          "distance_m": 22.983423607637864,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1009,10 +3809,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1021,12 +3877,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 5.310889132455344
+          "distance_m": 5.310889132455344,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 32.8365308875363
+          "distance_m": 32.8365308875363,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1045,10 +3945,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1057,12 +4013,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.0
+          "distance_m": 30.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1081,10 +4081,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1093,12 +4149,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 20.0
+          "distance_m": 20.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1117,10 +4217,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1129,17 +4285,61 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 10.0
+          "distance_m": 10.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
     {
-      "x": 75.0,
+      "x": 70.0,
       "y": 43.30127018922192,
       "species_type": "tree",
       "species": null,
@@ -1153,10 +4353,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1165,17 +4421,61 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 10.0
+          "distance_m": 5.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
     {
-      "x": 85.0,
+      "x": 80.0,
       "y": 43.30127018922192,
       "species_type": "tree",
       "species": null,
@@ -1189,10 +4489,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1201,17 +4557,61 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 20.0
+          "distance_m": 15.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
     {
-      "x": 95.0,
+      "x": 90.0,
       "y": 43.30127018922192,
       "species_type": "tree",
       "species": null,
@@ -1225,10 +4625,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1237,12 +4693,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 18.301270189221917
+          "distance_m": 18.301270189221917,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 30.0
+          "distance_m": 25.0,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1261,10 +4761,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1273,12 +4829,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 33.10339673509576
+          "distance_m": 33.10339673509576,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1297,10 +4897,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1309,12 +4965,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 23.363109283679442
+          "distance_m": 23.363109283679442,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1333,10 +5033,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1345,12 +5101,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 13.994101450294997
+          "distance_m": 13.994101450294997,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1369,10 +5169,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1381,12 +5237,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 6.770145892161299
+          "distance_m": 6.770145892161299,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1405,10 +5305,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1417,12 +5373,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 6.29165124598849
+          "distance_m": 6.29165124598849,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1441,10 +5441,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1453,12 +5509,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 6.29165124598849
+          "distance_m": 6.29165124598849,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1477,10 +5577,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1489,12 +5645,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 6.29165124598849
+          "distance_m": 6.29165124598849,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1513,10 +5713,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1525,12 +5781,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 9.789528865126682
+          "distance_m": 9.789528865126682,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1549,10 +5849,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1561,12 +5917,56 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 18.596636131331614
+          "distance_m": 18.596636131331614,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     },
@@ -1585,10 +5985,66 @@
           "clause": "таблица 9.1"
         },
         {
+          "rule_id": "sewer_tree",
+          "object": "PIPE_SEWER",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "object": "PIPE_DRAINAGE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "gas_tree",
+          "object": "PIPE_GAS",
+          "planting": "tree",
+          "min_distance_m": 1.5,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "object": "PIPE_HEAT",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "cable_tree",
+          "object": "CABLE",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
           "rule_id": "building_tree",
           "object": "BUILDING",
           "planting": "tree",
           "min_distance_m": 5.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "road_tree",
+          "object": "ROAD",
+          "planting": "tree",
+          "min_distance_m": 2.0,
+          "act": "СП 42.13330.2016",
+          "clause": "таблица 9.1"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "object": "LIGHTING",
+          "planting": "tree",
+          "min_distance_m": 4.0,
           "act": "СП 42.13330.2016",
           "clause": "таблица 9.1"
         }
@@ -1597,15 +6053,866 @@
         {
           "rule_id": "water_tree",
           "status": "allowed",
-          "distance_m": 31.291651245988493
+          "distance_m": 31.291651245988493,
+          "message": null
+        },
+        {
+          "rule_id": "sewer_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_SEWER в чертеже не найдено"
+        },
+        {
+          "rule_id": "drainage_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_DRAINAGE в чертеже не найдено"
+        },
+        {
+          "rule_id": "gas_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_GAS в чертеже не найдено"
+        },
+        {
+          "rule_id": "heat_network_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа PIPE_HEAT в чертеже не найдено"
+        },
+        {
+          "rule_id": "cable_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа CABLE в чертеже не найдено"
         },
         {
           "rule_id": "building_tree",
           "status": "allowed",
-          "distance_m": 28.210545464438447
+          "distance_m": 28.210545464438447,
+          "message": null
+        },
+        {
+          "rule_id": "road_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа ROAD в чертеже не найдено"
+        },
+        {
+          "rule_id": "lighting_tree",
+          "status": "not_applicable",
+          "distance_m": null,
+          "message": "Объектов типа LIGHTING в чертеже не найдено"
         }
       ]
     }
   ],
-  "rejections": []
+  "rejections": [
+    {
+      "x": 5.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 10.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 15.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 20.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 25.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 30.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 35.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 40.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 45.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 50.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 55.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 60.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 65.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 70.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 75.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 80.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 85.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 90.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 95.0,
+      "y": 25.980762113533153,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "water_tree",
+        "object": "PIPE_WATER",
+        "planting": "tree",
+        "min_distance_m": 2.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 37.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 42.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 47.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 52.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 57.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 62.5,
+      "y": 30.310889132455344,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 35.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 40.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 45.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 50.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 55.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 60.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 65.0,
+      "y": 34.641016151377535,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 32.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 37.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 42.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 47.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 52.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 57.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 62.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 67.5,
+      "y": 38.971143170299726,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 35.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 40.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 45.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 50.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 55.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 60.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 65.0,
+      "y": 43.30127018922192,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 32.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 37.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 42.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 47.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 52.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 57.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 62.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 67.5,
+      "y": 47.63139720814411,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 35.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 40.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 45.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 50.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 55.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 60.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    },
+    {
+      "x": 65.0,
+      "y": 51.9615242270663,
+      "species_type": "tree",
+      "violated": {
+        "rule_id": "building_tree",
+        "object": "BUILDING",
+        "planting": "tree",
+        "min_distance_m": 5.0,
+        "act": "СП 42.13330.2016",
+        "clause": "таблица 9.1"
+      }
+    }
+  ]
 }

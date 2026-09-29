@@ -6,7 +6,8 @@ def write_placements_json(
     output_path: str,
     input_path: str,
     species_type: str,
-    rejections=None
+    rejections=None,
+    warnings=None
 ) -> None:
     if rejections is None:
         rejections = []
@@ -37,7 +38,8 @@ def write_placements_json(
             item["rule_checks"].append({
                 "rule_id": check.rule.id,
                 "status": check.status,
-                "distance_m": check.distance_m
+                "distance_m": check.distance_m,
+                "message": check.message
             })
 
         placements_data.append(item)
@@ -74,6 +76,22 @@ def write_placements_json(
 
             if rule_data not in rules_data:
                 rules_data.append(rule_data)
+    not_applicable_rules = []
+
+    for placement in placements:
+        for check in placement.rule_checks:
+            if check.status != "not_applicable":
+                continue
+
+            rule_data = {
+                "rule_id": check.rule.id,
+                "object": check.rule.object.value,
+                "planting": check.rule.planting,
+                "message": check.message
+            }
+
+            if rule_data not in not_applicable_rules:
+                not_applicable_rules.append(rule_data)
 
     data = {
         "input": input_path,
@@ -81,10 +99,12 @@ def write_placements_json(
         "placements_count": len(placements),
         "rejections_count": len(rejections),
         "rules": rules_data,
+        "not_applicable_rules": not_applicable_rules,
         "placements": placements_data,
         "rejections": rejections_data
     }
-
+    if warnings:
+        data["warnings"] = warnings
     with open(
         output_path,
         "w",

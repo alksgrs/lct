@@ -6,17 +6,28 @@ from greenplan.writer.json_writer import write_placements_json
 
 
 def run(
-    input_path: str,
-    output_path: str,
-    species_type: str = "tree",
-    rules_path: str = "data/rules/sp42.yaml",
-    planting_path: str = "data/rules/planting.yaml"
+    input_path,
+    output_path,
+    species_type="tree",
+    rules_path="data/rules/sp42.yaml",
+    planting_path="data/rules/planting.yaml",
+    json_output_path=None,
+    layers_path="data/config/layers.yaml"
 ):
+    warnings = []
+
+    if json_output_path is None:
+        json_output_path = str(
+            output_path.rsplit(".", 1)[0] + ".json"
+        )
+
     placements, rejections = build_plan(
         input_path=input_path,
         rules_path=rules_path,
         planting_path=planting_path,
-        species_type=species_type
+        species_type=species_type,
+        layers_path=layers_path,
+        warnings=warnings
     )
 
     layer_name = {
@@ -37,18 +48,14 @@ def run(
         layer_name=layer_name
     )
 
-    json_output_path = str(
-        output_path.rsplit(".", 1)[0] + ".json"
-    )
-
     write_placements_json(
-        placements=placements,
-        output_path=json_output_path,
-        input_path=input_path,
-        species_type=species_type,
-        rejections=rejections
+        placements,
+        json_output_path,
+        input_path,
+        species_type,
+        rejections,
+        warnings
     )
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -73,8 +80,7 @@ def main():
         default="tree",
         choices=[
             "tree",
-            "shrub",
-            "groundcover"
+            "shrub"
         ]
     )
 
@@ -88,14 +94,21 @@ def main():
         default="out.json"
     )
 
+    parser.add_argument(
+        "--layers",
+        default="data/config/layers.yaml"
+    )
+
     args = parser.parse_args()
 
     run(
         input_path=args.input,
-        output_path=args.output,
-        species_type=args.species,
         rules_path=args.rules,
-        planting_path=args.planting
+        planting_path=args.planting,
+        species_type=args.species,
+        output_path=args.output,
+        json_output_path=args.json,
+        layers_path=args.layers
     )
 
 

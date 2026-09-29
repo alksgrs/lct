@@ -1,9 +1,6 @@
 rules:
-  # Коммуникации
-  # Значения ниже сохранены по исходным данным задачи.
-  # Для нормативного режима проекта verified следует выставлять true
-  # только после проверки конкретного документа и применимости нормы
-  # к региону/типу объекта.
+
+  # Инженерные сети — СП 42.13330.2016, таблица 9.1
 
   - id: water_tree
     object: PIPE_WATER
@@ -16,155 +13,167 @@ rules:
   - id: water_shrub
     object: PIPE_WATER
     planting: shrub
-    min_distance_m: 1.0
+    min_distance_m: null
     act: "СП 42.13330.2016"
     clause: "таблица 9.1"
     verified: false
 
   - id: sewer_tree
-    object: PIPE_WATER
+    object: PIPE_SEWER
     planting: tree
-    min_distance_m: 2.0
+    min_distance_m: 1.5
     act: "СП 42.13330.2016"
     clause: "таблица 9.1"
-    verified: false
+    verified: true
 
   - id: sewer_shrub
-    object: PIPE_WATER
+    object: PIPE_SEWER
     planting: shrub
-    min_distance_m: 1.0
+    min_distance_m: null
     act: "СП 42.13330.2016"
     clause: "таблица 9.1"
     verified: false
 
   - id: drainage_tree
-    object: PIPE_WATER
+    object: PIPE_DRAINAGE
     planting: tree
     min_distance_m: 2.0
     act: "СП 42.13330.2016"
     clause: "таблица 9.1"
-    verified: false
+    verified: true
 
   - id: drainage_shrub
-    object: PIPE_WATER
+    object: PIPE_DRAINAGE
     planting: shrub
-    min_distance_m: 1.0
+    min_distance_m: null
     act: "СП 42.13330.2016"
     clause: "таблица 9.1"
     verified: false
 
-  - id: gas_low_medium_tree
+  - id: gas_tree
     object: PIPE_GAS
-    planting: tree
-    min_distance_m: 2.0
-    act: "ППМ 743-ПП"
-    clause: "правила создания, содержания и охраны зеленых насаждений"
-    verified: false
-
-  - id: gas_low_medium_shrub
-    object: PIPE_GAS
-    planting: shrub
-    min_distance_m: 1.0
-    act: "ППМ 743-ПП"
-    clause: "правила создания, содержания и охраны зеленых насаждений"
-    verified: false
-
-  - id: power_cable_up_to_10kv_tree
-    object: CABLE
-    planting: tree
-    min_distance_m: 1.0
-    act: "Исходные данные задачи"
-    clause: "кабели силовые до 10 кВ"
-    verified: false
-
-  - id: power_cable_up_to_10kv_shrub
-    object: CABLE
-    planting: shrub
-    min_distance_m: 0.5
-    act: "Исходные данные задачи"
-    clause: "кабели силовые до 10 кВ"
-    verified: false
-
-  - id: communication_cable_tree
-    object: CABLE
     planting: tree
     min_distance_m: 1.5
-    act: "Исходные данные задачи"
-    clause: "кабели связи"
-    verified: false
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
 
-  - id: communication_cable_shrub
-    object: CABLE
+  - id: gas_shrub
+    object: PIPE_GAS
     planting: shrub
-    min_distance_m: 0.7
-    act: "Исходные данные задачи"
-    clause: "кабели связи"
+    min_distance_m: null
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
     verified: false
 
   - id: heat_network_tree
     object: PIPE_HEAT
     planting: tree
     min_distance_m: 2.0
-    act: "Исходные данные задачи"
-    clause: "теплопровод (канал)"
-    verified: false
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
 
   - id: heat_network_shrub
     object: PIPE_HEAT
     planting: shrub
     min_distance_m: 1.0
-    act: "Исходные данные задачи"
-    clause: "теплопровод (канал)"
-    verified: false
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
 
-  # ЛЭП
+  - id: cable_tree
+    object: CABLE
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: cable_shrub
+    object: CABLE
+    planting: shrub
+    min_distance_m: 0.7
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+
+  # ЛЭП.
+  # min_distance_m здесь соответствует ширине охранной зоны
+  # от крайних проводов.
+  #
+  # Автоматический режим пока рассматривает охранную зону как
+  # запрещённую для размещения без отдельного признака согласования.
+  # Поэтому эти правила пока verified: false.
+
   - id: powerline_04kv_tree
     object: POWERLINE_04KV
     planting: tree
     min_distance_m: 2.0
     act: "ПП РФ № 160"
-    clause: "охранная зона ВЛ 0,4 кВ"
+    clause: "приложение, подпункт «а»"
     verified: false
-    prohibition: "Посадка деревьев запрещена в пределах охранной зоны"
 
-  - id: powerline_6_10kv_tall_tree
+  - id: powerline_04kv_shrub
+    object: POWERLINE_04KV
+    planting: shrub
+    min_distance_m: 2.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_6_10kv_tree
     object: POWERLINE_6_10KV
-    planting: tall_tree
+    planting: tree
     min_distance_m: 10.0
     act: "ПП РФ № 160"
-    clause: "охранная зона ВЛ 6-10 кВ"
+    clause: "приложение, подпункт «а»"
     verified: false
-    height_limit_m: 4.0
-    prohibition: "Высокорослые деревья выше 4 м запрещены в пределах охранной зоны"
+
+  - id: powerline_6_10kv_shrub
+    object: POWERLINE_6_10KV
+    planting: shrub
+    min_distance_m: 10.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
 
   - id: powerline_35kv_tree
     object: POWERLINE_35KV
     planting: tree
     min_distance_m: 15.0
     act: "ПП РФ № 160"
-    clause: "охранная зона ВЛ 35 кВ"
+    clause: "приложение, подпункт «а»"
     verified: false
-    prohibition: "Посадка деревьев запрещена в пределах охранной зоны"
 
-  - id: powerline_110kv_any_plant
+  - id: powerline_35kv_shrub
+    object: POWERLINE_35KV
+    planting: shrub
+    min_distance_m: 15.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_110kv_tree
     object: POWERLINE_110KV
-    planting: any
+    planting: tree
     min_distance_m: 20.0
     act: "ПП РФ № 160"
-    clause: "охранная зона ВЛ 110 кВ"
-    verified: false
-    prohibition: "Посадка любых насаждений запрещена в пределах охранной зоны"
-
-  - id: maf_tree
-    object: MAF
-    planting: tree
-    min_distance_m: 0
-    act: ""
-    clause: ""
+    clause: "приложение, подпункт «а»"
     verified: false
 
+  - id: powerline_110kv_shrub
+    object: POWERLINE_110KV
+    planting: shrub
+    min_distance_m: 20.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
 
-  # Объекты благоустройства
+
+  # Объекты благоустройства — СП 42.13330.2016, таблица 9.1
+
   - id: building_tree
     object: BUILDING
     planting: tree
@@ -184,38 +193,50 @@ rules:
   - id: road_tree
     object: ROAD
     planting: tree
-    min_distance_m: 5.0
-    act: "Исходные данные задачи"
-    clause: "расстояние до проезжей части"
-    verified: false
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: road_shrub
+    object: ROAD
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
 
   - id: lighting_tree
     object: LIGHTING
     planting: tree
-    min_distance_m: 2.0
-    act: "Исходные данные задачи"
-    clause: "расстояние до сетей освещения"
-    verified: false
-
-  - id: bin_tree
-    object: BIN
-    planting: tree
-    min_distance_m: 0.1
-    act: "TEMPORARY"
-    clause: "0.1 m technical offset"
-    verified: false
-
-  # Общие запреты и условия
-  - id: invasive_species
-    object: SITE_BOUNDARY
-    planting: invasive
-    min_distance_m: 0.0
-    act: "ПП Москвы № 369-ПП"
-    clause: "приложение 1; приложение 2"
+    min_distance_m: 4.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
     verified: true
-    prohibition: "Инвазивные виды не допускаются к использованию в соответствующих случаях, установленных нормативным актом"
+
+
+  # МАФ.
+  # Нормативного расстояния в текущей модели не задаём.
+
+  - id: maf_tree
+    object: MAF
+    planting: tree
+    min_distance_m: 0.0
+    act: ""
+    clause: ""
+    verified: false
+
+
+  # Технический отступ от урны находится в planting.yaml
+  # и не является нормативным правилом.
+
+  # Инвазивные виды требуют отдельной проверки по виду растения
+  # и региону применения. В геометрические ограничения посадки
+  # это правило пока не включаем.
+
 
 conditions:
+
   - id: high_building_density
     type: density_threshold
     parameter: building_density_coefficient

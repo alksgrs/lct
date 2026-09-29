@@ -21,8 +21,12 @@ def check_rule(
     if not matching_features:
         return RuleCheck(
             rule=rule,
-            status="allowed",
-            distance_m=None
+            status="not_applicable",
+            distance_m=None,
+            message=(
+                f"Объектов типа {rule.object.value} "
+                f"в чертеже не найдено"
+            )
         )
 
     distance = min(
@@ -40,4 +44,6 @@ def check_rule(
         status=status,
         distance_m=distance
     )
+
+
 

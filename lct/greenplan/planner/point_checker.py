@@ -2,7 +2,21 @@ from shapely.geometry import Point
 
 from greenplan.models import Feature, Rule
 from greenplan.models import Feature, Rejection, Rule
+from greenplan.models import FeatureKind
 
+
+def find_bin_violation(point, features, offset):
+    if offset <= 0:
+        return False
+
+    for feature in features:
+        if feature.kind != FeatureKind.BIN:
+            continue
+
+        if point.distance(feature.geom) < offset:
+            return True
+
+    return False
 
 def find_violation(
     point: Point,

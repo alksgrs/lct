@@ -4,24 +4,15 @@ from shapely.geometry import LineString, Point, Polygon
 from shapely.ops import unary_union
 from ezdxf.disassemble import recursive_decompose
 from greenplan.models import Feature, FeatureKind
+from pathlib import Path
+
+from greenplan.config.layers import load_layer_rules, get_layer_kind
 
 
-LAYER_KIND = {
-    "PIPE_WATER": FeatureKind.PIPE_WATER,
-    "PIPE_GAS": FeatureKind.PIPE_GAS,
-    "CABLE": FeatureKind.CABLE,
-    "BUILDING": FeatureKind.BUILDING,
-    "ROAD": FeatureKind.ROAD,
-    "POWERLINE": FeatureKind.POWERLINE,
-    "SITE_BOUNDARY": FeatureKind.SITE_BOUNDARY,
-    "ГРАНИЦА_ЗАКАЗА": FeatureKind.SITE_BOUNDARY,
-}
-
-
-def layer_to_kind(layer_name: str) -> FeatureKind:
-    return LAYER_KIND.get(
-        layer_name.upper(),
-        FeatureKind.UNKNOWN
+def layer_to_kind(layer_name, layer_rules):
+    return get_layer_kind(
+        layer_name,
+        layer_rules
     )
 
 
@@ -97,9 +88,12 @@ def insert_to_feature(entity, doc) -> Feature | None:
     )
 
 
-def entity_to_feature(entity) -> Feature | None:
+def entity_to_feature(entity, layer_rules):
     layer_name = entity.dxf.layer
-    kind = layer_to_kind(layer_name)
+    kind = layer_to_kind(
+        entity.dxf.layer,
+        layer_rules
+    )
 
     if entity.dxftype() == "LINE":
         start = entity.dxf.start
@@ -126,22 +120,33 @@ def entity_to_feature(entity) -> Feature | None:
     )
 
 
-def read_dxf(path: str) -> list[Feature]:
+def read_dxf(
+    path,
+    layers_path="data/config/layers.yaml"
+):
+    layer_rules = load_layer_rules(
+        layers_path
+    )
+
     doc = ezdxf.readfile(path)
     modelspace = doc.modelspace()
 
     features = []
 
     for entity in modelspace:
-        feature = entity_to_feature(entity)
-
-        if feature is None and entity.dxftype() == "INSERT":
+        if entity.dxftype() == "INSERT":
             feature = insert_to_feature(
                 entity,
                 doc
+            )
+        else:
+            feature = entity_to_feature(
+                entity,
+                layer_rules
             )
 
         if feature is not None:
             features.append(feature)
 
     return features
+

@@ -6,11 +6,19 @@ from shapely.geometry.base import BaseGeometry
 
 class FeatureKind(Enum):
     PIPE_WATER = "PIPE_WATER"
+    PIPE_SEWER = "PIPE_SEWER"
+    PIPE_DRAINAGE = "PIPE_DRAINAGE"
     PIPE_GAS = "PIPE_GAS"
     CABLE = "CABLE"
+    PIPE_HEAT = "PIPE_HEAT"
     BUILDING = "BUILDING"
     ROAD = "ROAD"
     POWERLINE = "POWERLINE"
+    LIGHTING = "LIGHTING"
+    POWERLINE_04KV = "POWERLINE_04KV"
+    POWERLINE_6_10KV = "POWERLINE_6_10KV"
+    POWERLINE_35KV = "POWERLINE_35KV"
+    POWERLINE_110KV = "POWERLINE_110KV"
     SITE_BOUNDARY = "SITE_BOUNDARY"
     MAF = "MAF"
     BIN = "BIN"
@@ -33,6 +41,7 @@ class RuleCheck:
     rule: Rule
     status: str
     distance_m: float | None = None
+    message: str | None = None
 
 
 @dataclass
