@@ -6,7 +6,7 @@ import {
 
 import Layout from "../components/Layout";
 import ProgressSteps from "../components/ProgressSteps";
-import type { Job } from "../types/api";
+import type { Job } from "../services/api";
 
 export default function ProcessingPage({
   job,
@@ -49,7 +49,7 @@ export default function ProcessingPage({
           <p>
             {failed
               ? job.error
-              : `Файл: ${job.inputFile}`}
+              : "Сервис анализирует участок и формирует план озеленения."}
           </p>
 
           {!failed && (
