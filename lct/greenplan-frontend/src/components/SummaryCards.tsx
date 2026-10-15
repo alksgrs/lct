@@ -9,14 +9,13 @@ import type { JobResult } from "../types/api";
 export default function SummaryCards({
   summary
 }: {
-  summary: JobResult["summary"];
+  summary: JobResult["statistics"];
 }) {
   const normsPassed =
-    summary.normsPassed ?? true;
+    summary.rejected_count === 0;
 
   const groundcoverArea =
-    summary.groundcoversAreaM2 ??
-    summary.groundcovers * 40;
+    summary.groundcovers_area_m2;
 
   return (
     <div className="summary-grid">
