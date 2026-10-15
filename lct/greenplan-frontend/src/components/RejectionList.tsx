@@ -35,20 +35,16 @@ export default function RejectionList({
             </strong>
 
             <span>
-              {typeLabel(
-                item.species_type
-              )}
+              {typeLabel(item.species_type)}
             </span>
           </div>
 
-          <p>
-            {item.reason}
-          </p>
+          <p>{item.reason}</p>
 
           <small>
-            {item.violated.source.act}
+            {item.violated.source}
             {" · "}
-            {item.violated.source.clause}
+            {item.violated.clause}
           </small>
         </article>
       ))}
