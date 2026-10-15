@@ -44,9 +44,7 @@ export default function PlacementDetails({
             </span>
 
             <h3>
-              {typeLabel(
-                placement.species_type
-              )}{" "}
+              {typeLabel(placement.species_type)}{" "}
               №{placement.id}
             </h3>
           </div>
@@ -74,71 +72,23 @@ export default function PlacementDetails({
           Посадка допустима
         </div>
 
-        <h4>
-          Проверенные отступы
-        </h4>
+        <h4>Нормативное обоснование</h4>
 
-        <div className="distance-list">
-          {placement.distances.length
-            ? placement.distances.map(
-                (
-                  distance,
-                  index
-                ) => (
-                  <div
-                    className="distance-row"
-                    key={`${distance.feature}-${index}`}
-                  >
-                    <span>
-                      {distance.feature}
-                    </span>
-
-                    <span>
-                      {distance.distance_m.toFixed(
-                        2
-                      )}{" "}
-                      м / минимум{" "}
-                      {distance.required_m.toFixed(
-                        2
-                      )}{" "}
-                      м
-                    </span>
-
-                    <CheckCircle2
-                      size={15}
-                    />
-                  </div>
-                )
-              )
-            : (
-              <div className="detail-muted">
-                Для покрытия отдельные
-                линейные отступы
-                не требуются.
-              </div>
-            )}
-        </div>
-
-        <h4>
-          Нормативное обоснование
-        </h4>
-
-        {placement.rationale.map(
-          (rule) => (
+        {placement.rationale.length > 0 ? (
+          placement.rationale.map((rule) => (
             <div
               className="rule-box"
               key={rule.id}
             >
               <strong>
-                {rule.source.act}
+                {rule.source}
               </strong>
 
               <span>
-                {rule.source.clause}
+                Пункт: {rule.clause}
               </span>
 
-              {rule.min_distance_m >
-                0 && (
+              {rule.min_distance_m > 0 && (
                 <span>
                   Минимальный отступ:{" "}
                   {rule.min_distance_m} м
@@ -151,7 +101,12 @@ export default function PlacementDetails({
                   : "⚠ Источник требует проверки"}
               </small>
             </div>
-          )
+          ))
+        ) : (
+          <div className="detail-muted">
+            Для этой посадки нормативное обоснование
+            не передано сервером.
+          </div>
         )}
       </section>
     </div>
