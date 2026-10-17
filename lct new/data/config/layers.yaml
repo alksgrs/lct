@@ -1,0 +1,46 @@
+layers:
+  - pattern: "^SITE_BOUNDARY$"
+    kind: SITE_BOUNDARY
+
+  - pattern: "^PIPE_WATER$"
+    kind: PIPE_WATER
+
+  - pattern: "^BUILDING$"
+    kind: BUILDING
+
+  - pattern: "^ГРАНИЦА_ЗАКАЗА$"
+    kind: SITE_BOUNDARY
+
+  - pattern: "ВОДОПР"
+    kind: PIPE_WATER
+
+  - pattern: "КАНАЛИЗ"
+    kind: PIPE_SEWER
+
+  - pattern: "ВОДОСТОК"
+    kind: PIPE_DRAINAGE
+
+  - pattern: "ГАЗ"
+    kind: PIPE_GAS
+
+  - pattern: "ТЕПЛО"
+    kind: PIPE_HEAT
+
+  - pattern: "СВЯЗ"
+    kind: CABLE
+
+  - pattern: "КАБЕЛ"
+    kind: CABLE
+
+  - pattern: "ДОРОГ"
+    kind: ROAD
+
+  - pattern: "ЗДАН"
+    kind: BUILDING
+
+  - pattern: "ЛЭП"
+    kind: POWERLINE
+
+  - pattern: "СВЕТИЛ"
+    kind: LIGHTING
+

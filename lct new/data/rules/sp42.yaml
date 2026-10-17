@@ -1,0 +1,248 @@
+rules:
+
+  # Инженерные сети — СП 42.13330.2016, таблица 9.1
+
+  - id: water_tree
+    object: PIPE_WATER
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: water_shrub
+    object: PIPE_WATER
+    planting: shrub
+    min_distance_m: null
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: sewer_tree
+    object: PIPE_SEWER
+    planting: tree
+    min_distance_m: 1.5
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: sewer_shrub
+    object: PIPE_SEWER
+    planting: shrub
+    min_distance_m: null
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: drainage_tree
+    object: PIPE_DRAINAGE
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: drainage_shrub
+    object: PIPE_DRAINAGE
+    planting: shrub
+    min_distance_m: null
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: gas_tree
+    object: PIPE_GAS
+    planting: tree
+    min_distance_m: 1.5
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: gas_shrub
+    object: PIPE_GAS
+    planting: shrub
+    min_distance_m: null
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: false
+
+  - id: heat_network_tree
+    object: PIPE_HEAT
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: heat_network_shrub
+    object: PIPE_HEAT
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: cable_tree
+    object: CABLE
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: cable_shrub
+    object: CABLE
+    planting: shrub
+    min_distance_m: 0.7
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+
+  # ЛЭП.
+  # min_distance_m здесь соответствует ширине охранной зоны
+  # от крайних проводов.
+  #
+  # Автоматический режим пока рассматривает охранную зону как
+  # запрещённую для размещения без отдельного признака согласования.
+  # Поэтому эти правила пока verified: false.
+
+  - id: powerline_04kv_tree
+    object: POWERLINE_04KV
+    planting: tree
+    min_distance_m: 2.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_04kv_shrub
+    object: POWERLINE_04KV
+    planting: shrub
+    min_distance_m: 2.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_6_10kv_tree
+    object: POWERLINE_6_10KV
+    planting: tree
+    min_distance_m: 10.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_6_10kv_shrub
+    object: POWERLINE_6_10KV
+    planting: shrub
+    min_distance_m: 10.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_35kv_tree
+    object: POWERLINE_35KV
+    planting: tree
+    min_distance_m: 15.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_35kv_shrub
+    object: POWERLINE_35KV
+    planting: shrub
+    min_distance_m: 15.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_110kv_tree
+    object: POWERLINE_110KV
+    planting: tree
+    min_distance_m: 20.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+  - id: powerline_110kv_shrub
+    object: POWERLINE_110KV
+    planting: shrub
+    min_distance_m: 20.0
+    act: "ПП РФ № 160"
+    clause: "приложение, подпункт «а»"
+    verified: false
+
+
+  # Объекты благоустройства — СП 42.13330.2016, таблица 9.1
+
+  - id: building_tree
+    object: BUILDING
+    planting: tree
+    min_distance_m: 5.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: building_shrub
+    object: BUILDING
+    planting: shrub
+    min_distance_m: 1.5
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: road_tree
+    object: ROAD
+    planting: tree
+    min_distance_m: 2.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: road_shrub
+    object: ROAD
+    planting: shrub
+    min_distance_m: 1.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+  - id: lighting_tree
+    object: LIGHTING
+    planting: tree
+    min_distance_m: 4.0
+    act: "СП 42.13330.2016"
+    clause: "таблица 9.1"
+    verified: true
+
+
+  # МАФ.
+  # Нормативного расстояния в текущей модели не задаём.
+
+  - id: maf_tree
+    object: MAF
+    planting: tree
+    min_distance_m: 0.0
+    act: ""
+    clause: ""
+    verified: false
+
+
+  # Технический отступ от урны находится в planting.yaml
+  # и не является нормативным правилом.
+
+  # Инвазивные виды требуют отдельной проверки по виду растения
+  # и региону применения. В геометрические ограничения посадки
+  # это правило пока не включаем.
+
+
+conditions:
+
+  - id: high_building_density
+    type: density_threshold
+    parameter: building_density_coefficient
+    operator: ">"
+    value: 0.6
+    act: "Исходные данные задачи"
+    clause: "условие по плотности застройки"
+    verified: false
+    action: "Требуется компенсационное озеленение"

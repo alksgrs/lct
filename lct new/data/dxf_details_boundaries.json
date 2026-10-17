@@ -1,0 +1,411 @@
+[
+  {
+    "file": "_06_10000176_Генплан_Олимп.dxf",
+    "layers": {
+      "_ГП_КОЛОДЦЫ_ВОДОСТОКА_РЕШЕ": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U71",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "LWPOLYLINE",
+              "LWPOLYLINE",
+              "POINT",
+              "POINT",
+              "POINT",
+              "LWPOLYLINE"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U71",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "LWPOLYLINE",
+              "LWPOLYLINE",
+              "POINT",
+              "POINT",
+              "POINT",
+              "LWPOLYLINE"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_ВОДОПР_": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_ГАЗ": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_КАНАЛИЗ": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_ЛК": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_ПРОЧИЕ_": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_СЕТИ_СВ": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ГП_КОЛОДЦЫ_РЕМОНТ_ТЕПЛОСЕ": {
+        "entity_count": 2,
+        "entity_types": {
+          "INSERT": 2
+        },
+        "examples": [
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          },
+          {
+            "type": "INSERT",
+            "block_name": "*U82",
+            "attributes": {
+              "НОМЕР": " "
+            },
+            "block_entities": [
+              "LWPOLYLINE",
+              "CIRCLE",
+              "TEXT",
+              "TEXT",
+              "TEXT",
+              "HATCH",
+              "HATCH",
+              "HATCH",
+              "HATCH"
+            ]
+          }
+        ]
+      },
+      "_ТИП_3__КАП__РЕМОНТ__ЩМА_": {
+        "entity_count": 1,
+        "entity_types": {
+          "HATCH": 1
+        },
+        "examples": [
+          {
+            "type": "HATCH"
+          }
+        ]
+      },
+      "_ТИП_4__КАП__РЕМОНТ__М_З_А": {
+        "entity_count": 1,
+        "entity_types": {
+          "HATCH": 1
+        },
+        "examples": [
+          {
+            "type": "HATCH"
+          }
+        ]
+      },
+      "ГРАНИЦА_ЗАКАЗА": {
+        "entity_count": 1,
+        "entity_types": {
+          "LWPOLYLINE": 1
+        },
+        "examples": [
+          {
+            "type": "LWPOLYLINE",
+            "closed": true,
+            "vertices": 4,
+            "length": 1396.114
+          }
+        ]
+      },
+      "ДВ_ГП_П_ГРАНИЦА_РАБОТ": {
+        "entity_count": 2,
+        "entity_types": {
+          "LWPOLYLINE": 2
+        },
+        "examples": [
+          {
+            "type": "LWPOLYLINE",
+            "closed": false,
+            "vertices": 2,
+            "length": 20.494
+          },
+          {
+            "type": "LWPOLYLINE",
+            "closed": false,
+            "vertices": 2,
+            "length": 20.494
+          }
+        ]
+      }
+    }
+  }
+]
