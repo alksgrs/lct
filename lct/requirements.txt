@@ -1,4 +1,0 @@
-ezdxf
-shapely
-PyYAML
-pytest
