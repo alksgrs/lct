@@ -1,0 +1,351 @@
+rules:
+- id: gas_tree
+  object: PIPE_GAS
+  planting: tree
+  kind: distance
+  min_distance_m: 1.5
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Газопровод, канализация»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: gas_shrub
+  object: PIPE_GAS
+  planting: shrub
+  kind: not_regulated
+  min_distance_m: null
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Газопровод, канализация»
+  note: Расстояние до кустарника не нормируется
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: sewer_tree
+  object: PIPE_SEWER
+  planting: tree
+  kind: distance
+  min_distance_m: 1.5
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Газопровод, канализация»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: sewer_shrub
+  object: PIPE_SEWER
+  planting: shrub
+  kind: not_regulated
+  min_distance_m: null
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Газопровод, канализация»
+  note: Расстояние до кустарника не нормируется
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: water_tree
+  object: PIPE_WATER
+  planting: tree
+  kind: distance
+  min_distance_m: 2.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Водопровод, дренаж»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: water_shrub
+  object: PIPE_WATER
+  planting: shrub
+  kind: not_regulated
+  min_distance_m: null
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Водопровод, дренаж»
+  note: Расстояние до кустарника не нормируется
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: drainage_tree
+  object: PIPE_DRAINAGE
+  planting: tree
+  kind: distance
+  min_distance_m: 2.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Водопровод, дренаж»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: drainage_shrub
+  object: PIPE_DRAINAGE
+  planting: shrub
+  kind: not_regulated
+  min_distance_m: null
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Водопровод, дренаж»
+  note: Расстояние до кустарника не нормируется
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: heat_tree
+  object: PIPE_HEAT
+  planting: tree
+  kind: distance
+  min_distance_m: 2.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Теплопровод, трубопровод, теплосеть»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: heat_shrub
+  object: PIPE_HEAT
+  planting: shrub
+  kind: distance
+  min_distance_m: 1.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Теплопровод, трубопровод, теплосеть»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: cable_tree
+  object: CABLE
+  planting: tree
+  kind: distance
+  min_distance_m: 2.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Силовой кабель и кабель связи»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: cable_shrub
+  object: CABLE
+  planting: shrub
+  kind: distance
+  min_distance_m: 0.7
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Силовой кабель и кабель связи»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: building_tree
+  object: BUILDING
+  planting: tree
+  kind: distance
+  min_distance_m: 5.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Наружная стена здания или сооружения»
+  note: Для школ и детских садов норма 10,0 м (строка 2 той же таблицы), тип здания по чертежу не определяется. Широкие кроны (липа, клён, дуб, каштан, тополь), затеняющие жилые помещения, — не ближе 10
+    м (примечание 3 к таблице)
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: building_shrub
+  object: BUILDING
+  planting: shrub
+  kind: distance
+  min_distance_m: 1.5
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Наружная стена здания или сооружения»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: road_tree
+  object: ROAD
+  planting: tree
+  kind: distance
+  min_distance_m: 2.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Край проезжей части, кромка укреплённой полосы обочины, бровка канавы»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: road_shrub
+  object: ROAD
+  planting: shrub
+  kind: distance
+  min_distance_m: 1.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Край проезжей части, кромка укреплённой полосы обочины, бровка канавы»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: pavement_tree
+  object: PAVEMENT
+  planting: tree
+  kind: distance
+  min_distance_m: 0.7
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Край тротуара и садовой дорожки»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: pavement_shrub
+  object: PAVEMENT
+  planting: shrub
+  kind: distance
+  min_distance_m: 0.5
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Край тротуара и садовой дорожки»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: lighting_tree
+  object: LIGHTING
+  planting: tree
+  kind: distance
+  min_distance_m: 4.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Мачта и опора освещения, трамвайной сети, колонны галерей и опоры эстакад»
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: lighting_shrub
+  object: LIGHTING
+  planting: shrub
+  kind: not_regulated
+  min_distance_m: null
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Мачта и опора освещения, трамвайной сети, колонны галерей и опоры эстакад»
+  note: Расстояние до кустарника не нормируется
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: powerline_04kv_ban
+  object: POWERLINE_04KV
+  planting: any
+  kind: ban
+  zone_m: 2.0
+  min_distance_m: null
+  act: ПП РФ № 160 от 24.02.2009
+  clause: Правила, п. 10 подп. «в»; Приложение, подп. «а» (ВЛ до 1 кВ)
+  note: Посадка в охранной зоне допускается только по письменному согласованию сетевой организации
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-160-1377
+- id: powerline_6_10kv_ban
+  object: POWERLINE_6_10KV
+  planting: any
+  kind: ban
+  zone_m: 10.0
+  min_distance_m: null
+  act: ПП РФ № 160 от 24.02.2009
+  clause: Правила, п. 10 подп. «в»; Приложение, подп. «а» (ВЛ 1–20 кВ)
+  note: Посадка в охранной зоне допускается только по письменному согласованию сетевой организации. Для СИП и изолированных проводов в населённых пунктах зона 5 м; тип провода по чертежу не определяется,
+    принято 10 м
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-160-1377
+- id: powerline_35kv_ban
+  object: POWERLINE_35KV
+  planting: any
+  kind: ban
+  zone_m: 15.0
+  min_distance_m: null
+  act: ПП РФ № 160 от 24.02.2009
+  clause: Правила, п. 10 подп. «в»; Приложение, подп. «а» (ВЛ 35 кВ)
+  note: Посадка в охранной зоне допускается только по письменному согласованию сетевой организации
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-160-1377
+- id: powerline_110kv_ban
+  object: POWERLINE_110KV
+  planting: any
+  kind: ban
+  zone_m: 20.0
+  min_distance_m: null
+  act: ПП РФ № 160 от 24.02.2009
+  clause: Правила, п. 10 подп. «в»; Приложение, подп. «а» (ВЛ 110 кВ)
+  note: Посадка в охранной зоне допускается только по письменному согласованию сетевой организации
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-160-1377
+- id: powerline_unknown_ban
+  object: POWERLINE
+  planting: any
+  kind: ban
+  zone_m: 10.0
+  min_distance_m: null
+  act: ПП РФ № 160 от 24.02.2009
+  clause: Правила, п. 10 подп. «в»; Приложение, подп. «а» (ВЛ 1–20 кВ)
+  note: Класс напряжения по чертежу не определён, принята охранная зона ВЛ 1–20 кВ. Посадка в охранной зоне допускается только по письменному согласованию сетевой организации
+  verified: true
+  verified_by: Малышева А.
+  verified_at: '2026-10-17'
+  source_url: https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-160-1377
+- id: tram_tree
+  object: TRAM_TRACK
+  planting: tree
+  kind: distance
+  min_distance_m: 5.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Ось трамвайных путей»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: tram_shrub
+  object: TRAM_TRACK
+  planting: shrub
+  kind: distance
+  min_distance_m: 3.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Ось трамвайных путей»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: retaining_wall_tree
+  object: RETAINING_WALL
+  planting: tree
+  kind: distance
+  min_distance_m: 3.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Подошва и внутренняя грань подпорной стенки»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: retaining_wall_shrub
+  object: RETAINING_WALL
+  planting: shrub
+  kind: distance
+  min_distance_m: 1.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Подошва и внутренняя грань подпорной стенки»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: slope_tree
+  object: SLOPE
+  planting: tree
+  kind: distance
+  min_distance_m: 1.0
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Подошва откоса, террасы и др.»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm
+- id: slope_shrub
+  object: SLOPE
+  planting: shrub
+  kind: distance
+  min_distance_m: 0.5
+  act: ППМ 743-ПП
+  clause: прил. 1, п. 3.6.3, табл. 3.6.1 (МГСН 1.01-99), строка «Подошва откоса, террасы и др.»
+  verified: true
+  verified_at: '2026-10-19'
+  source_url: https://meganorm.ru/Data2/1/4293799/4293799668.htm

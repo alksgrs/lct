@@ -1,0 +1,39 @@
+planting:
+  tree:
+    grid_spacing_m: 5.0
+    min_spacing_m: 10.0
+    bin_offset_m: 0.1
+
+  shrub:
+    grid_spacing_m: 2.0
+    min_spacing_m: 3.0
+    min_distance_to_trees_m: 2.0
+
+greening:
+  lawn:
+    min_area_m2: 20
+    offsets_m:
+      ROAD: 0.5
+      PAVEMENT: 0.3
+      BUILDING: 1.0
+      MAF: 0.3
+      TRAM_TRACK: 2.0
+      RETAINING_WALL: 0.5
+
+  hedge:
+    extra_offset_m: 0.3
+    edge_gap_m: 0.2
+    spacing_m: 2.0
+    min_length_m: 8.0
+    tree_gap_m: 2.0
+    shrub_clear_m: 1.5
+
+  flowerbed:
+    radius_m: 2.5
+    min_lawn_area_m2: 400
+    area_per_bed_m2: 4000
+    tree_gap_m: 2.5
+    bed_gap_m: 12.0
+    edge_gap_m: 1.0
+    utility_gap_m: 1.0
+    max_count: 20
