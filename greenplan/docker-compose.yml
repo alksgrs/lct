@@ -1,0 +1,38 @@
+services:
+  api:
+    build: ./greenplan-backend
+    environment:
+      GREENPLAN_CORS: http://localhost:8080,http://127.0.0.1:8080
+      GREENPLAN_AI_PROVIDER: ${GREENPLAN_AI_PROVIDER:-}
+      GREENPLAN_AI_TIMEOUT: ${GREENPLAN_AI_TIMEOUT:-120}
+      YANDEX_FOLDER_ID: ${YANDEX_FOLDER_ID:-}
+      YANDEX_API_KEY: ${YANDEX_API_KEY:-}
+      YANDEX_OAUTH_TOKEN: ${YANDEX_OAUTH_TOKEN:-}
+      YANDEX_IAM_TOKEN: ${YANDEX_IAM_TOKEN:-}
+      GIGACHAT_AUTH_KEY: ${GIGACHAT_AUTH_KEY:-}
+      GIGACHAT_SCOPE: ${GIGACHAT_SCOPE:-GIGACHAT_API_PERS}
+      GIGACHAT_VERIFY_SSL: ${GIGACHAT_VERIFY_SSL:-1}
+      FUSIONBRAIN_KEY: ${FUSIONBRAIN_KEY:-}
+      FUSIONBRAIN_SECRET: ${FUSIONBRAIN_SECRET:-}
+      POLLINATIONS: ${POLLINATIONS:-1}
+      POLLINATIONS_KEY: ${POLLINATIONS_KEY:-}
+    volumes:
+      - runs:/app/runs
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  web:
+    build: ./greenplan-frontend
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+
+volumes:
+  runs:
