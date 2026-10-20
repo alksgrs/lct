@@ -139,7 +139,8 @@ flowchart TD
 ### Docker
 
 ```bash
-git clone <репозиторий> greenplan && cd greenplan
+git clone https://github.com/alksgrs/lct.git
+cd lct/greenplan
 docker compose up --build
 ```
 
