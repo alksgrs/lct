@@ -1,0 +1,158 @@
+﻿file,layer,entity_count,entity_types,examples
+10001759 НО 3-я Парковая ул.dxf,КАРТИНКА,1,IMAGE: 1,IMAGE
+10001759 НО 3-я Парковая ул.dxf,ЭН_ДЕМОНТАЖ,17,INSERT: 17,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,!ТЕКСТ,13,MTEXT: 12; TEXT: 1,TEXT; MTEXT; MTEXT
+10001759 НО 3-я Парковая ул.dxf,ЭН_ОПОРА_НО_К1_LED,4,INSERT: 4,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА__ЗАМ__СВЕТ___,4,INSERT: 4,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА__ЗАМ__СВЕТ__Н,38,INSERT: 38,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,1Х63ММ_ОСВЕЩЕНИЕ,2,LWPOLYLINE: 2,LWPOLYLINE; LWPOLYLINE
+10001759 НО 3-я Парковая ул.dxf,ТРУБЫ_НО,5,INSERT: 5,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА_НО_К1-П_LED50,3,INSERT: 3,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_ОПОРА_КО_СИРИУС-4,4,INSERT: 4,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА_К1_LED,43,INSERT: 43,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА_КО,2,INSERT: 2,INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА_К2-180_2_LED,3,INSERT: 3,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_ВЛ_НО,6,LINE: 1; LWPOLYLINE: 5,LINE; LWPOLYLINE; LWPOLYLINE
+10001759 НО 3-я Парковая ул.dxf,0,8,INSERT: 8,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_КАБЕЛЬ,3,INSERT: 3,INSERT; INSERT; INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА_К2-90_2_LED,1,INSERT: 1,INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_КЛ_НО,3,LWPOLYLINE: 3,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+10001759 НО 3-я Парковая ул.dxf,ЭН_СУЩ_ОПОРА__ЗАМ__СВЕТ__0,1,INSERT: 1,INSERT
+10001759 НО 3-я Парковая ул.dxf,ЭН_ВЫНОСКИ_НОМЕРА_ОПОРЫ,86,MTEXT: 86,MTEXT; MTEXT; MTEXT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_ОФР_РАЗМЕРЫ_ОСН,6,DIMENSION: 6,DIMENSION; DIMENSION; DIMENSION
+_06_10000176_Генплан_Олимп.dxf,0,175,CIRCLE: 8; DIMENSION: 11; HATCH: 4; INSERT: 26; LINE: 2; LWPOLYLINE: 8; MTEXT: 7; TEXT: 109,TEXT; TEXT; TEXT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_ГРАНИЦА_РАБОТ,2,LWPOLYLINE: 2,LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,ГП1__300Х150_,5,LWPOLYLINE: 5,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,БОРТ_ГП_1__300X150__ПОНИЖЕ,8,LWPOLYLINE: 8,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,ГП_300_300,8,DIMENSION: 3; LWPOLYLINE: 5,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,ГП_300_400,6,LWPOLYLINE: 6,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,ГП_200_600,4,LWPOLYLINE: 4,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,БР_1000_300_150_ПОНИЖЕННЫЙ,2,LWPOLYLINE: 2,LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,_ТИП_7__ГАЗОН_,3,HATCH: 3,HATCH; HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_5__РЕМ__ТР_ИЗ_А_Б_,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_1__РЕМ__ЩМА_,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_2__РЕМ__МЗ_А_Б_,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-АБ_ПЧ__2_И_БОЛЕЕ_МЕ,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_3__КАП__РЕМОНТ__ЩМА_,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_4__КАП__РЕМОНТ__М_З_А,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_8__РЕМ__ТР_ИЗ_ПЛИТКИ_,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ПЧ-АБ_ПЧ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ПЧ-АБ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ПЧ-ГЗН,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ПЧ-ПЛ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-АБ_ПЧ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-АБ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-ГЗН,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-ПЛ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ГЗН-АБ_ПЧ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ГЗН-АБ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ГЗН-ГЗН,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ПЛ_ТР-ПЛ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ЩМА_ПЧ-АБ_ПЧ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ЩМА_ПЧ-АБ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ЩМА_ПЧ-ГЗН,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ЩМА_ПЧ-ПЛ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,ДВ_ОФР_РАМКА,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ПЧ-Щ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-Щ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ГЗН-Щ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ГЗН-ПЛ_ТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ЩМА_ПЧ-Щ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,ЛЕСТНИЦЫ,7,INSERT: 7,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ПАНДУС,4,INSERT: 4,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_НО_СВЕТИЛЬНИК_КОНТ,8,INSERT: 8,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_ПС,8,INSERT: 8,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,БР_600_180,2,LWPOLYLINE: 2,LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,БР_600_180_ПОНИЖЕННЫЙ,1,LWPOLYLINE: 1,LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,РАЗМЕТКА,1,INSERT: 1,INSERT
+_06_10000176_Генплан_Олимп.dxf,_МАФ_ВЕНТ__КОЖУХ,1,INSERT: 1,INSERT
+_06_10000176_Генплан_Олимп.dxf,БР_100_300_150,1,LWPOLYLINE: 1,LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,БР_100_300_150_ПОНИЖЕННЫЙ,3,LWPOLYLINE: 3,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_МАФ,279,INSERT: 279,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ЭН_ПНД_110_ФУТЛЯР,8,INSERT: 8,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ИОС_ОПОРА_НО_700,1,INSERT: 1,INSERT
+_06_10000176_Генплан_Олимп.dxf,ИОС_ОПОРА_НО_400,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ВСПОМОГАТЕЛЬНЫЙ_СЛОЙ_В_БЛО,2,CIRCLE: 2,CIRCLE; CIRCLE
+_06_10000176_Генплан_Олимп.dxf,ИОС_ОПОРА_КО_ВЫЛЕТ_4М_,4,ARC: 2; CIRCLE: 2,CIRCLE; ARC; CIRCLE
+_06_10000176_Генплан_Олимп.dxf,$СК_АД_000_046_$$$НАДПИСИ,1,ACAD_PROXY_ENTITY: 1,ACAD_PROXY_ENTITY
+_06_10000176_Генплан_Олимп.dxf,ГАЗОН,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_ПАВИЛЬОН_ООТ,6,INSERT: 6,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ДВ_ГП_П_СТЕЛА,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,СИП_2А,1,LWPOLYLINE: 1,LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-ГЗН__2_И_БОЛЕЕ_МЕТР,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-ПЛ_ТР__2_И_БОЛЕЕ_МЕ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_АБ_ТР-Щ__2_И_БОЛЕЕ_МЕТРОВ,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_ТИП_6__КАП__РЕМ__ТР_,1,HATCH: 1,HATCH
+_06_10000176_Генплан_Олимп.dxf,_Щ_-Щ,2,HATCH: 2,HATCH; HATCH
+_06_10000176_Генплан_Олимп.dxf,ИОТ3_ФУТЛЯР_110,1,INSERT: 1,INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_КАНАЛИЗ,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_ВОДОПР_,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_ПРОЧИЕ_,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_ЛК,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_ВОДОСТОКА_РЕШЕ,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_ГАЗ,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_ТЕПЛОСЕ,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_ГП_КОЛОДЦЫ_РЕМОНТ_СЕТИ_СВ,2,INSERT: 2,INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,_РАЗМЕТКА_1_1_ПАРКОВКА,117,INSERT: 117,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,0_КАРТА,1,IMAGE: 1,IMAGE
+_06_10000176_Генплан_Олимп.dxf,_РАЗМЕТКА_1_14_1,20,INSERT: 20,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,БР_1000_300_150,45,ACAD_PROXY_ENTITY: 1; DIMENSION: 11; INSERT: 31; LWPOLYLINE: 2,INSERT; INSERT; INSERT
+_06_10000176_Генплан_Олимп.dxf,ГРАНИЦА_ЗАКАЗА,1,LWPOLYLINE: 1,LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,$88$БР_1000_300_150,1,LWPOLYLINE: 1,LWPOLYLINE
+_06_10000176_Генплан_Олимп.dxf,DEFPOINTS,1,CIRCLE: 1,CIRCLE
+_06_10000176_Генплан_Олимп.dxf,$130$БР_1000_300_150,8,DIMENSION: 8,DIMENSION; DIMENSION; DIMENSION
+_06_10000176_Генплан_Олимп.dxf,$148$БР_1000_300_150,1,LWPOLYLINE: 1,LWPOLYLINE
+test.dxf,SITE_BOUNDARY,1,LWPOLYLINE: 1,LWPOLYLINE
+test.dxf,PIPE_WATER,1,LINE: 1,LINE
+test.dxf,BUILDING,1,LWPOLYLINE: 1,LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_КЛ,6,INSERT: 6,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_КРЕСТЫ,6,INSERT: 6,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_НАДЗЕМКА,8,INSERT: 8,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_ПОДЗЕМКА,7,INSERT: 7,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_ПРОЕКТНЫЕ_СЕТИ,3,INSERT: 3,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_РАМКА,22,INSERT: 22,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,0,17559,CIRCLE: 23; HATCH: 75; INSERT: 1; LINE: 14932; LWPOLYLINE: 1230; POINT: 123; REGION: 620; TEXT: 555,LINE; LINE; LINE
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_БОРТ_ГП1,44,ARC: 16; LWPOLYLINE: 28,LWPOLYLINE; LWPOLYLINE; ARC
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_БОРТ_БР100_30_15,1774,ARC: 738; CIRCLE: 3; LWPOLYLINE: 1033,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_БОРТ_ПОНИЖЕННЫЙ,162,LWPOLYLINE: 162,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ГРАНИЦА_РАБОТ,5,LWPOLYLINE: 5,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__УСИЛЕНИЕ,10192,ARC: 117; LWPOLYLINE: 9976; SOLID: 99,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__КОНСТРУКЦИЯ_КОЛОДЦА,498,ARC: 1; LWPOLYLINE: 479; SOLID: 18,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__0,1053,LWPOLYLINE: 785; SOLID: 268,SOLID; SOLID; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__ПРОЕКТ,2001,LWPOLYLINE: 2001,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__ПОС,274,LWPOLYLINE: 274,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__01_ГП_ШТРИХОВКА,68,LWPOLYLINE: 68,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__01_ГП_ЛИНИЯ_КОНСТРУКЦ,3,LWPOLYLINE: 3,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,PDF__ТЕКСТ,172,MTEXT: 172,MTEXT; MTEXT; MTEXT
+Харьковская АПОТ_2026-01-15.dxf,ШТАМП,1,MTEXT: 1,MTEXT
+Харьковская АПОТ_2026-01-15.dxf,_ВОПРОСЫ_ПО_ГЕНПЛАНУ,82,ACAD_PROXY_ENTITY: 41; CIRCLE: 2; LWPOLYLINE: 2; MTEXT: 37,ACAD_PROXY_ENTITY; ACAD_PROXY_ENTITY; ACAD_PROXY_ENTITY
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_СПУТНИК,1,IMAGE: 1,IMAGE
+Харьковская АПОТ_2026-01-15.dxf,РАЗМЕТКА,3,INSERT: 3,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ПО_ОГРАНИЧИВАЮЩЕЕ,1,LWPOLYLINE: 1,LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_МАФ,107,ACAD_PROXY_ENTITY: 4; INSERT: 103,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ОФР_ВЫНОСКИ,11,ACAD_PROXY_ENTITY: 11,ACAD_PROXY_ENTITY; ACAD_PROXY_ENTITY; ACAD_PROXY_ENTITY
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП_УСТРОЙСТВО_ПЛ,9,HATCH: 9,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ГАЗОН_РУЛОННЫЙ,78,DIMENSION: 3; HATCH: 75,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_П_ГАЗОН_УСТРАИВАЕМЫЙ,42,HATCH: 42,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП5_ЗАМЕНА_ПОКРЫ,22,HATCH: 22,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП2_РЕМОНТ_ПОКРЫ,8,HATCH: 8,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП9_УСТРОЙСТВО_Т,23,HATCH: 23,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ОФР_РАЗМЕРЫ_ОСН,648,DIMENSION: 648,DIMENSION; DIMENSION; DIMENSION
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_СУЩ_ПАВИЛЬОН_ООТ,2,ACAD_PROXY_ENTITY: 1; INSERT: 1,ACAD_PROXY_ENTITY; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_БОРТ_ГП2-ГП3,4,LWPOLYLINE: 4,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,_РАЗБОРКА,51,CIRCLE: 1; LWPOLYLINE: 50,LWPOLYLINE; LWPOLYLINE; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП5А_КАПРЕМОНТ_Т,12,HATCH: 12,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП6_УСТРОЙСТВО_Т,23,HATCH: 23,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,_ГП_ВЕРТИКАЛКА,1977,INSERT: 941; LINE: 1008; LWPOLYLINE: 28,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ПП_ДО_ТИП4_УСТРОЙСТВО_У,11,HATCH: 11,HATCH; HATCH; HATCH
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_КАБЕЛИ,30,INSERT: 30,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_ВОДОСТО,40,INSERT: 40,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_ВОДОПРО,5,INSERT: 5,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_КАНАЛИЗ,25,INSERT: 25,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_РЕШЕТКИ_ДК,13,INSERT: 13,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ОБЪЕМЫ,22,MTEXT: 22,MTEXT; MTEXT; MTEXT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_СТЕЛА,5,ACAD_PROXY_ENTITY: 1; INSERT: 1; LWPOLYLINE: 3,ACAD_PROXY_ENTITY; INSERT; LWPOLYLINE
+Харьковская АПОТ_2026-01-15.dxf,ССЫЛКА_ЭЛЕКТРИКА,2,INSERT: 2,INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,_ГП_ВСПОМОГАТЕЛЬНЫЕ_ОТМЕТК,39,INSERT: 39,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_ГАЗ,8,INSERT: 8,INSERT; INSERT; INSERT
+Харьковская АПОТ_2026-01-15.dxf,ДВ_ГП_П_ЗАМЕНА_ЛЮК_ТЕПЛОСЕ,7,INSERT: 7,INSERT; INSERT; INSERT
